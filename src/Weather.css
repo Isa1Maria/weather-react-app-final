@@ -10,11 +10,11 @@
 }
 
 .Weather h1 {
-    color:#eeeeee;
+    color:#fafafa;
     font-size: 40px;
     font-weight: 300;
     line-height: 45px;
-    margin: 40px 50px 10px 38px;
+    margin: 40px 50px 0px 38px;
     
 }
 
@@ -40,8 +40,8 @@
 }
 
 .Weather .temperature {
-    color: #ffecb3;
-    font-size: 35px;
+    color: #eeeeee;
+    font-size: 45px;
     font-weight: 100;
     
 }

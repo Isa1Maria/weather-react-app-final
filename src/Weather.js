@@ -4,6 +4,7 @@ import WeatherInfo from "./WeatherInfo";
 import "./Weather.css";
 
 
+
 export default function Weather (props) {
     const [weatherData, setWeatherData] = useState({ready: false});
     const [city, setCity] = useState(props.defaultCity);
@@ -45,13 +46,13 @@ export default function Weather (props) {
                         <div className="col-6">
                     <input
                     type="search"
-                    placeholder="Write a city"
+                    placeholder=" "
                     className="form-control"
                     onChange={handleCityChange}
                     />
                     </div>
                     <div className="col-3">
-                    <input type="submit" value="🌤" className="btn btn-light btn-sm" />
+                    <input type="submit" value="Search" className="btn btn-light btn-sm" />
                 </div>
                 </div>
                 
@@ -59,6 +60,8 @@ export default function Weather (props) {
                 <WeatherInfo data={weatherData}/>
             <div>
           <img src="undraw_map_1r69.svg" width="300" alt="map" />
+
+      
         
                 </div>
            </div>
