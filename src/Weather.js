@@ -51,13 +51,16 @@ export default function Weather (props) {
                     />
                     </div>
                     <div className="col-3">
-                    <input type="submit" value="🖱" className="btn btn-light btn-sm" />
+                    <input type="submit" value="🌤" className="btn btn-light btn-sm" />
                 </div>
-            
                 </div>
+                
                 </form>
                 <WeatherInfo data={weatherData}/>
-            
+            <div>
+          <img src="undraw_map_1r69.svg" width="300" alt="map" />
+        
+                </div>
            </div>
             
         );

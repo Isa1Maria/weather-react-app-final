@@ -10,7 +10,23 @@ export default function RightDate (props) {
         "Friday",
         "Saturday"
     ];
+    let months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ];
     let day = days[props.date.getDay()];
+    let date = props.date.getDate();
+    let month = months[props.date.getMonth()];
     let hours = props.date.getHours();
     if (hours < 10) {
         hours = `0${hours}`;
@@ -20,8 +36,8 @@ export default function RightDate (props) {
         minutes = `0${minutes}`;
     }
     return (
-        <div>
-            {day} {hours}:{minutes}
+        <div className="date">
+            {day}, {date} {month} {hours}:{minutes}
         </div>
     )
 }
